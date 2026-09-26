@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+   
+    
+    <div class="firstpage">
+
+        <div class="imagetext">
+            <h4>Welcome To The</h4>
+            <h1>WORLD OF <br> <span>CARVERSE</span></h1>
+            <p>Real Noise, Real Power, Real Perfomance.</p>
+            <a href="user_login.php" class="btn">START EXPLORING</a>
+        </div>
+    </div>
+
+    <script>
+        let firstpageBg = document.querySelector('.firstpage');
+
+        setInterval(() => {
+            firstpageBg.style.backgroundImage = "url('imagess/bg1.jpg')"
+            
+            setTimeout(() => {
+                firstpageBg.style.backgroundImage = "url('imagess/bg.jpg')"
+            }, 100);
+        }, 220);
+    </script>
+</body>
+</html>

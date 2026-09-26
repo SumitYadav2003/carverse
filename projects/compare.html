@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <title>Car Information</title>
+    <style>
+
+:root {
+    --main-color:
+    #d90429;
+    --text-color:
+    #020102;
+    --bg-color:
+    #fff;
+    }
+        header {
+     display: block; width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 100;
+     background-color:crimson;
+     text-decoration:none;
+     }
+
+     *{
+font-family: "Poppins", sans-serif;
+     }
+ 
+ 
+ .nav{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 20px 80px;
+ 
+         }
+ 
+ 
+ #menu-icon {
+   font-size: 24px;
+   cursor: pointer;
+   color: crimson;
+   display: none;
+ }
+ 
+ .logo {
+ font-size: 1.2rem;
+ font-weight: 700;
+ color: black;
+ }
+
+ .logo:hover{
+    color: white;
+ }
+ 
+ 
+ .navbar{
+   display: flex;
+   column-gap: 2rem;
+   list-style: none;
+ 
+ }
+ 
+ .navbar a {
+   color: black;
+   font-size: 1rem;
+   text-transform: uppercase;
+   font-weight: 1000;
+   text-decoration:none;
+   }
+ 
+   .navbar a:hover,
+   .navbar .active{
+   color:white;
+   border-bottom: 3px solid yellow;
+  }
+
+   /* Style the dropdown menu */
+   .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+      
+      /* Style the dropdown button */
+      .dropbtn {
+          color: black;
+          background-color: none; /* Change to your desicrimson background color */
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      
+      /* Style the dropdown content (hidden by default) */
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: white; /* Change to your desicrimson background color */
+          min-width: 160px;
+          z-index: 1;
+          color:crimson;
+          border:0.8rem solid white;
+      }
+      
+      /* Style the dropdown links */
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+          background-color:crimson; /* Change to your desicrimson hover background color */
+          
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+      
+
+ 
+        /* CSS styles for the container */
+        .car-container {
+            position: relative;
+            max-width: 600px; /* Adjust the container width as needed */
+            margin: 0 auto;
+            padding-right: 636px;
+            margin-top: 120px;
+        }
+
+        /* CSS styles for the car image */
+        .car-image {
+            max-width: 100%;
+            height: 341px;
+            padding-top: 25px;
+        }
+
+        /* CSS styles for the car information */
+        .car-info {
+            position: absolute;
+            top: 11px;
+            right: 131px;
+           
+            color:black;
+            padding: 10px;
+        }
+
+        /* CSS styles for the car information text */
+         .car-info p {
+            margin: 0;
+            padding: 0;
+            font-size: 31px;
+        } 
+
+       /* .car-info .first{
+        font-size: 40px;
+        }
+
+        .car-info.second{
+         font-size: 12px;
+        }
+
+        .third{
+          font-size: 10px;
+        }
+        .hii{
+            font-size: 20px;
+        } */
+
+        .car-info .third{
+            font-size: 19px;
+        }
+
+        .rating{
+            color: orange;
+        }
+        ion-icon{
+            color: crimson;
+        }
+ .btn{
+ background-color: var(--main-color);
+  color: var(--bg-color);
+  font-weight: 400;
+    font-size: 27px;
+    margin-top: 43px;
+    margin-left: -10px;
+   
+        }
+    .btn:hover{
+        background: var(--bg-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color)
+    }
+
+
+    .car-container .offers{
+        font-size: 20px;
+    }
+
+    .swiper-container {
+            width: 100%;
+            padding-top: 358px;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            height: 300px; /* Set your prefercrimson height */
+        }
+        
+        .car-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        .icon-container {
+            border: 2px solid #ccc;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 397px;
+        }
+
+        /* CSS styles for each icon and text */
+        .icon {
+            text-align: center;
+        }
+
+        .icon img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .icon p {
+            margin: 0;
+        }
+
+        .swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    padding-top: 1144px;
+    color: crimson;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-spacing: 20px; /* Add whitespace between columns */
+            border: 1px solid grey;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .sideheading{
+            padding-left: 578px;
+        }
+
+        .sideheadings{
+            padding-left: 560px;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #000; /* Add border to the table */
+        }
+
+        th, td {
+            border: 1px solid #000; /* Add border to each cell */
+            padding: 10px;
+            text-align: left;
+            font-weight:bold;
+        }
+
+        th {
+            background-color: crimson;
+            font-weight:bold;
+        }
+
+        .info {
+            font-style: italic;
+            font-size: 12px;
+            font-weight:bold;
+        }
+
+        .bm{
+            padding-left: 600px;
+        }
+
+
+
+
+
+
+
+
+        .product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  padding-left: 548px;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 584px;
+  height: 469px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: crimson;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.discount-tag:hover{
+  color: black;
+  background-color: yellow;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background:crimson;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+  padding-left: 136px;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 244px;
+}
+
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 10px 0;
+  color:maroon;
+  padding-left: 131px;
+}
+
+.price{
+  font-weight: 900;
+  font-size: 20px;
+  padding-left: 236px
+}
+
+
+
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+
+.object {
+            padding: 20px;
+            text-align: center;
+        }
+        .line {
+            border: none; /* Remove the default border of the <hr> element */
+            border-top: 2px solid #000; /* Add a 2px solid black border to create a line */
+        }
+
+
+
+        .footer {
+  background-color: crimson;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+.footer-section {
+  flex: 0 0 calc(33.33% - 20px);
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-family: sans-serif
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: yellow;
+}
+
+
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 0px 0;
+    background-color: black;
+    color: #fff;
+    margin-bottom: -45px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: sans-serif;
+}
+
+.footer-links a:hover {
+  color: yellow;
+}
+
+.face{
+    color: white;
+}
+.face:hover{
+  color: yellow;
+}
+
+
+
+
+
+
+
+    /* .images{
+        padding-top: 10px;
+    } */
+    </style>
+</head>
+<body>
+
+    <header>
+    
+        <div class="nav container">
+    
+        <i class='bx bx-menu' id="menu-icon"></i>
+    
+        <a href="#" class="logo">Car<span>Verse</span></a>
+        <ul class="navbar">
+        <li><a href="Mainpage.php" class="active">Home</a></li>
+        <li><a href="mainpagee.html">Cars</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="blog1.html">Our Blog</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <!-- <li><a href="admin_login.php">Admin</a></li> -->
+         <!-- <li><a href="logout.php">LOGOUT</a></li>  -->
+        <!-- <li><a href="logout.php" onclick="return confirm('logout from the website?');">logout</a> </li> -->
+        <li class="dropdown">
+            <a href="#" class="dropbtn">USER</a>
+            <div class="dropdown-content">
+                <a href="user_login.php">Login</a>
+                <a href="logout.php" onclick="return confirm('Logout from the website?');">Logout</a>
+                <a href="user_register.php">Register</a>
+                <a href="update_user.php">Update</a>
+            </div>
+            </li>    
+        </ul> 
+    </div>
+    </header>
+
+    <div class="car-container">
+        <img class="car-image" src="imagess/volvoc40.jpg" alt="Car Image">
+        <div class="car-info">
+            <p class="first">Volvo C40 Recharge</p><br>
+            <ion-icon name="star-outline" icon-size="large"></ion-icon><ion-icon name="star-outline" icon-size="large"></ion-icon><ion-icon name="star-outline" icon-size="large"></ion-icon><ion-icon name="star-outline" icon-size="large"></ion-icon> 4 star rating<br><br>
+            <p class="Second">Rs.61.25 Lakh*Get On Road Price</p>
+            <p class="third">*Ex-showroom Price in Mumbai</p><br>
+            <a href="appointment.html"> <button type="submit" class="btn">Book an Appointment</button><br><br><br><br></a>
+            <ion-icon name="pricetag-outline" ></ion-icon> Dont miss the September offers
+        </div>
+       
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="car-image" src="imagess/c40-2.jpg" alt="Volvo c40 recharge">
+                <p>Volvo c40 recharge</p>
+            </div>
+            <div class="swiper-slide">
+                <img class="car-image" src="imagess/c40.jpg" alt="Volvo c40 recharge">
+                <p>Volvo c40 recharge</p>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="car-image" src="imagess/c40-3.jpg" alt="Volvo c40 recharge">
+                <p>Volvo c40 recharge</p>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="car-image" src="imagess/c40-4.webp" alt="Volvo c40 recharge">
+                <p>Volvo c40 recharge</p>
+            </div>
+
+            <div class="swiper-slide">
+                <img class="car-image" src="imagess/c40-5.webp" alt="Volvo c40 recharge">
+                <p>Volvo c40 recharge</p>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        
+        <!-- Add pagination and navigation buttons if desicrimson -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+       
+    </div>
+
+    <div class="icon-container">
+        <div class="icon">
+            <img src="imagess/fuel.jpg" alt="Fuel Icon">
+            <p>Car type</p>
+            <p>Electric</p>
+        </div>
+        <div class="icon">
+            <img src="imagess/indicator.jpg" alt="Car Icon">
+            <p>Driving Range</p>
+            <p>530 km/full charge</p>
+        </div>
+        <div class="icon">
+            <img src="imagess/charger.jpg" alt="Indicator Icon">
+            <p>Charging Time</p>
+            <p>27 min</p>
+        </div>
+
+        <div class="icon">
+            <img src="imagess/gear1.jpg" alt="Indicator Icon">
+            <p>Transmission</p>
+            <p>Automatic</p>
+        </div>
+        
+        <div class="icon">
+            <img src="imagess/battery.jpg" alt="Indicator Icon">
+            <p>Battery Capacity</p>
+            <p>78Kwh</p>
+        </div>
+    </div>
+
+
+    <h1 class="sideheading">Some Key Features </h1>
+    <table>
+        <tr>
+            <td>Charging time  -----              27 Min</td>
+            <td>Battery Capacity     ----            78m kwh</td>
+        </tr>
+        <tr>
+            <td>Max Power  ----                     402.30 bhp</td>
+            <td>Max Torque   ----                    660 Nm</td> 
+        </tr>
+        <tr> 
+            <td>Seating Capacity   ---              5</td> 
+            <td>Range     -----                       530</td>            
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+
+
+
+    <h1 class="sideheadings">Some Key Specifications </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Engine and Transmission</th>
+                <th>Fuel and Performance</th>
+                <th>Charging</th>
+                <th>Suspension,Steering and Brakes</th>
+              
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Battery Capacity - 78kwh</td>
+                <td>Fuel - Electric</td>
+                <td>Fast Charging</td>
+                <td>Steering Type - Electric</td>
+               
+                
+            </tr>
+            <tr>
+                <td>Motor Power - 402.30</td>
+                <td>Emission - ZEV</td>
+                <td>Time - 1hr</td>
+                <td>Front Brake - Disc</td>
+               
+                
+            </tr>
+            <tr>
+                <td>Max Power - 402.30bhp</td>
+                <td>Acceleration - 4.7s</td>
+                <td>Drive - 500km/charge</td>
+                <td>Rear Type - Disc</td>
+               
+               
+            </tr>
+            <!-- Add more rows with data here -->
+        </tbody>
+    </table>
+
+
+
+    <section class="product" id="1"> 
+        <h2 class="product-category">SOME ELECTRIC CARS</h2>
+        <button class="pre-btn"><img src="imagess/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="imagess/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">carverse</span>
+                    <img src="imagess/roversports.jpg" class="product-thumb" alt="">
+                     <a href="usuv1.html"><button class="card-btn">VIEW DETAILS<DETAILS></button></a>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">SPORTS</h2>
+                    <p class="product-short-description">PETROL ENGINE <img src="imagess\logoo.png" style="width: 20px;"><span> NEW LAUNCHED</span></p>
+                    <span class="price">3.3-CR</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">carverse</span>
+                    <img src="imagess/china.jpeg" class="product-thumb" alt="">
+                     <a href="usuv2.html"><button class="card-btn">VIEW DETAILS<DETAILS></button></a>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">SSYOUNG</h2>
+                    <p class="product-short-description">PETROL ENGINE <img src="imagess\logoo.png" style="width: 20px;"><span> NEW LAUNCHED</span></p>
+                    <span class="price">2.2-CR</span>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">carverse</span>
+                    <img src="imagess/delorean.webp" class="product-thumb" alt="">
+                     <a href="usuv3.html"><button class="card-btn">VIEW DETAILS<DETAILS></button></a>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">DELOREAN</h2>
+                    <p class="product-short-description">PETROL ENGINE <img src="imagess\logoo.png" style="width: 20px;"><span> NEW LAUNCHED</span></p>
+                    <span class="price">1.1-CR</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">carverse</span>
+                    <img src="imagess/bmwxm.jpg" class="product-thumb" alt="">
+                     <a href="usuv4.html"><button class="card-btn">VIEW DETAILS<DETAILS></button></a>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">BMW-XM</h2>
+                    <p class="product-short-description">PETROL ENGINE <img src="imagess\logoo.png" style="width: 20px;"><span> NEW LAUNCHED</span></p>
+                    <span class="price">1.2-CR</span>
+                </div>
+            </div>
+        </section>
+
+
+            <div class="object">
+            
+            </div>
+            <hr class="line">
+            <div class="object">
+            </div>
+           
+
+
+
+
+
+
+<!-- 
+this is the second comparison page -->
+
+<h1 class="bm">BMW i4 Electric</h1>
+<div class="car-container">
+    <img class="car-image" src="imagess/bmwi4.webp" alt="Car Image">
+    <div class="car-info">
+        <p class="first">BMW i4 Electric</p><br>
+        <ion-icon name="star-outline" icon-size="large"></ion-icon><ion-icon name="star-outline" icon-size="large"></ion-icon><ion-icon name="star-outline" icon-size="large"></ion-icon><ion-icon name="star-outline" icon-size="large"></ion-icon> 4 star rating<br><br>
+        <p class="Second">Rs.81.25 Lakh*Get On Road Price</p>
+        <p class="third">*Ex-showroom Price in Mumbai</p><br>
+        <a href="appointment.html"> <button type="submit" class="btn">Book an Appointment</button><br><br><br><br></a>
+        <ion-icon name="pricetag-outline" ></ion-icon> Dont miss the September offers
+    </div>
+   
+</div>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img class="car-image" src="imagess/bmwi4-1.jpg" alt="Bmw-i4">
+            <p>Bmw-i4</p>
+        </div>
+        <div class="swiper-slide">
+            <img class="car-image" src="imagess/bmwi4-2.jpg" alt="Bmw-i4">
+            <p>Bmw-i4</p>
+        </div>
+
+        <div class="swiper-slide">
+            <img class="car-image" src="imagess/bmwi4-3.jpg" alt="Bmw-i4">
+            <p>Bmw-i4</p>
+        </div>
+
+        <div class="swiper-slide">
+            <img class="car-image" src="imagess/bmwi4-4.jpg" alt="Bmw-i4">
+            <p>Bmw-i4</p>
+        </div>
+
+        <div class="swiper-slide">
+            <img class="car-image" src="imagess/bmwi4-5.jpg" alt="Bmw-i4">
+            <p>Bmw-i4</p>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    
+    <!-- Add pagination and navigation buttons if desicrimson -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+   
+</div>
+
+<div class="icon-container">
+    <div class="icon">
+        <img src="imagess/fuel.jpg" alt="Fuel Icon">
+        <p>Car type</p>
+        <p>Electric</p>
+    </div>
+    <div class="icon">
+        <img src="imagess/indicator.jpg" alt="Car Icon">
+        <p>Driving Range</p>
+        <p>530 km/full charge</p>
+    </div>
+    <div class="icon">
+        <img src="imagess/charger.jpg" alt="Indicator Icon">
+        <p>Charging Time</p>
+        <p>27 min</p>
+    </div>
+
+    <div class="icon">
+        <img src="imagess/gear1.jpg" alt="Indicator Icon">
+        <p>Transmission</p>
+        <p>Automatic</p>
+    </div>
+    
+    <div class="icon">
+        <img src="imagess/battery.jpg" alt="Indicator Icon">
+        <p>Battery Capacity</p>
+        <p>78Kwh</p>
+    </div>
+</div>
+
+
+<h1 class="sideheading">Some Key Features </h1>
+<table>
+    <tr>
+        <td>Charging time  -----              27 Min</td>
+        <td>Battery Capacity     ----            78m kwh</td>
+    </tr>
+    <tr>
+        <td>Max Power  ----                     402.30 bhp</td>
+        <td>Max Torque   ----                    660 Nm</td> 
+    </tr>
+    <tr> 
+        <td>Seating Capacity   ---              5</td> 
+        <td>Range     -----                       530</td>            
+    </tr>
+    <!-- Add more rows as needed -->
+</table>
+
+
+
+<h1 class="sideheadings">Some Key Specifications </h1>
+<table>
+    <thead>
+        <tr>
+            <th>Engine and Transmission</th>
+            <th>Fuel and Performance</th>
+            <th>Charging</th>
+            <th>Suspension,Steering and Brakes</th>
+          
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Battery Capacity - 78kwh</td>
+            <td>Fuel - Electric</td>
+            <td>Fast Charging</td>
+            <td>Steering Type - Electric</td>
+           
+            
+        </tr>
+        <tr>
+            <td>Motor Power - 402.30</td>
+            <td>Emission - ZEV</td>
+            <td>Time - 1hr</td>
+            <td>Front Brake - Disc</td>
+           
+            
+        </tr>
+        <tr>
+            <td>Max Power - 402.30bhp</td>
+            <td>Acceleration - 4.7s</td>
+            <td>Drive - 500km/charge</td>
+            <td>Rear Type - Disc</td>
+           
+           
+        </tr>
+        <!-- Add more rows with data here -->
+    </tbody>
+</table>
+
+
+
+<section class="product"> 
+    <h2 class="product-category">SOME WELL-KNOWN SUV'S</h2>
+    <button class="pre-btn"><img src="imagess/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="imagess/arrow.png" alt=""></button>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">carverse</span>
+                <img src="imagess/wrangler.jpg" class="product-thumb" alt="">
+                 <a href="suv4.html"><button class="card-btn">VIEW DETAILS<DETAILS></button></a>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">WRANGLER</h2>
+                <p class="product-short-description">PETROL ENGINE <img src="imagess\logoo.png" style="width: 20px;"><span> NEW LAUNCHED</span></p>
+                <span class="price">3.2-CR</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">carverse</span>
+                <img src="imagess/lexus.jpg" class="product-thumb" alt="">
+                 <a href="suv5.html"><button class="card-btn">VIEW DETAILS<DETAILS></button></a>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">LEXUS</h2>
+                <p class="product-short-description">PETROL ENGINE <img src="imagess\logoo.png" style="width: 20px;"><span> NEW LAUNCHED</span></p>
+                <span class="price">3.2-CR</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">carverse</span>
+                <img src="imagess/crimsonwagon.webp" class="product-thumb" alt="">
+                 <a href="suv6.html"><button class="card-btn">VIEW DETAILS<DETAILS></button></a>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">BRABUS</h2>
+                <p class="product-short-description">PETROL ENGINE <img src="imagess\logoo.png" style="width: 20px;"><span> NEW LAUNCHED</span></p>
+                <span class="price">3.2-CR</span>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">carverse</span>
+                <img src="imagess/bmwxm.jpg" class="product-thumb" alt="">
+                 <a href="usuv4.html"><button class="card-btn">VIEW DETAILS<DETAILS></button></a>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">BMW-XM</h2>
+                <p class="product-short-description">PETROL ENGINE <img src="imagess\logoo.png" style="width: 20px;"><span> NEW LAUNCHED</span></p>
+                <span class="price">1.2-CR</span>
+            </div>
+        </div>
+        
+    
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-logo">
+           <img src="imagess/gwagon.webp" alt="Footer Logo">
+       </div> 
+       <div class="footer-content">
+           <div class="footer-section">
+               <h4>Explore</h4>
+               <ul>
+                   <li><a href="Mainpage.php">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="service.html">Services</a></li>
+                   <li><a href="contactus.html">Contact</a></li>
+               </ul>
+           </div>
+           <div class="footer-section">
+               <h4>Resources</h4>
+               <ul>
+                   <li><a href="blog1.html">Blog1</a></li>
+                   <li><a href="blog2.html">Blog2</a></li>
+                   <li><a href="blog3.html">Blog3</a></li>
+                   <li><a href="review.html">Reviews</a></li>
+               </ul>
+           </div>
+           <div class="footer-section">
+               <h4>Connect</h4>
+    <p>Stay connected with us for the latest updates and insights.</p>
+    <div class="social-icons">
+    <ion-icon name="logo-facebook" class="face"></ion-icon>
+    <ion-icon name="logo-twitter" class="face"></ion-icon>
+    <ion-icon name="logo-instagram" class="face"></ion-icon>               
+    <ion-icon name="logo-linkedin" class="face"></ion-icon>
+    <ion-icon name="logo-youtube" class="face"></ion-icon>
+    
+               </div>
+           </div>
+       </div>
+       
+       <div class="footer-bottom">
+           <p>&copy; 2023 CarVerse Website. All rights reserved. | Designed by Sumit Yadav</p>
+           <div class="footer-links">
+               <a href="#">Terms of Service</a>
+               <a href="#">Privacy Policy</a>
+               <a href="#">Cookie Policy</a>
+           </div>
+       </div>
+     </footer>
+
+
+
+
+
+
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto', // Adjust the number of visible slides
+        spaceBetween: 10, // Adjust the space between slides
+        pagination: {
+           el: '.swiper-pagination',
+           clickable: true,
+        },
+        navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+        },
+        });
+        
+        </script>
+
+
+
+<script src="script2.js"></script>
+
+
+    
+   
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+
+    <!-- <img src="imagess/c40.jpg" class="images"> -->
+</body>
+</html>

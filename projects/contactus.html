@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Contact US Page</title>
+<!-- <link rel="stylesheet" type="text/css" href="contact.css"> -->
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">"
+</head>
+<body>
+
+        
+    <header class="header">
+    
+        <div class="nav container">
+        <!-- Menu Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Logo -->
+        <a href="#" class="logo">Car<span>Verse</span></a>
+        <!-- Nav List -->
+        <ul class="navbar">
+          <li><a href="Mainpage.php" class="active">Home</a></li>
+          <li><a href="mainpageeee.html">Cars</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="blog1.html">Our Blog</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropbtn">USER</a>
+              <div class="dropdown-content">
+                  <a href="user_login.php">Login</a>
+                  <a href="logout.php" onclick="return confirm('Logout from the website?');">Logout</a>
+                  <a href="user_register.php">Register</a>
+                  <a href="update_user.php">Update</a>
+              </div>
+              </li>
+        </ul>
+
+    </header>
+ 
+<section class="contactus">
+<div class="content">
+<h2>Contact Our Team</h2>
+<p>We CarVerse Promise You To Give Correct Assistance and Information and Help.</p>
+</div>
+<div class="container">
+ <div class="contactInfo">
+         <div class="box">
+          <div class="icon"><ion-icon name="navigate-circle-outline"></ion-icon></div>
+     <div class="text">
+    <h3>Address</h3>
+    <p> 2370 Bungalow No 3,<br> MG Club,Goregaon,<br>400203</p>
+    </div>
+         </div>
+         <div class="box">
+            <div class="icon"><ion-icon name="call-outline" class="icons"></ion-icon></div>
+            <div class="text">
+                <h3>Phone</h3>
+                <p>897-456-234</p>
+         </div>
+ </div>
+ <div class="box">
+    <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+    <div class="text">
+        <h3>E-mail</h3>
+        <p>carverse@gmail.com</p>
+    
+        </div>
+        </div>
+        </div>
+<div class="contactForm">
+    <form name="cnt" method="post" action="cnt.php">
+        <h2> Send Message</h2>
+        <div class="inputBox">
+            <input type="text" name="name" requicrimson="requicrimson">
+            <span>Full Name</span>
+        </div>
+        <div class="inputBox">
+            <input type="email" name="email" requicrimson="requicrimson">
+            <span>Email</span>
+        </div>
+        <div class="inputBox">
+            <textarea requicrimson="requicrimson" name="text" class="hey1"></textarea>
+            <span>Type your message...</span>
+            </div>
+
+        <div class="inputBox">
+            <input type="submit" name="sub" value="Send">
+        </div>
+        </div>
+        </div>
+    </form>
+</div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-logo">
+     <img src="imagess/gwagon.webp" alt="Footer Logo">
+ </div> 
+ <div class="footer-content">
+     <div class="footer-section">
+         <h4>Explore</h4>
+         <ul>
+             <li><a href="Mainpage.php">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="service.html">Services</a></li>
+             <li><a href="contactus.html">Contact</a></li>
+         </ul>
+     </div>
+     <div class="footer-section">
+         <h4>Resources</h4>
+         <ul>
+             <li><a href="blog1.html">Blog1</a></li>
+             <li><a href="blog2.html">Blog2</a></li>
+             <li><a href="blog3.html">Blog3</a></li>
+             <li><a href="review.html">Reviews</a></li>
+         </ul>
+     </div>
+     <div class="footer-section">
+         <h4>Connect</h4>
+<p>Stay connected with us for the latest updates and insights.</p>
+<div class="social-icons">
+<ion-icon name="logo-facebook" class="face"></ion-icon>
+<ion-icon name="logo-twitter" class="face"></ion-icon>
+<ion-icon name="logo-instagram" class="face"></ion-icon>               
+<ion-icon name="logo-linkedin" class="face"></ion-icon>
+<ion-icon name="logo-youtube" class="face"></ion-icon>
+
+         </div>
+     </div>
+ </div>
+ 
+ <div class="footer-bottom">
+     <p>&copy; 2023 CarVerse Website. All rights reserved. | Designed by Sumit Yadav</p>
+     <div class="footer-links">
+         <a href="#">Terms of Service</a>
+         <a href="#">Privacy Policy</a>
+         <a href="#">Cookie Policy</a>
+     </div>
+ </div>
+</footer>
+
+
+
+
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+    textarea.hey1 {
+    background-color: #eaa1a19e;
+    /* height: 50px; */
+    /* width: 150px; */
+    position: relative;
+    padding: 40px 115px;
+    border-color: brown;
+    color:black;
+}
+
+*
+{
+margin: 0; 
+padding: 0; 
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+
+header {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    }
+
+
+.nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 76px;
+    }
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
+  display: none;
+}
+
+.logo {
+font-size: 1.2rem;
+font-weight: 700;
+color:white;
+
+}
+
+.logo :hover{
+color: white;
+}
+
+.header{
+  background-color: #e91e63;
+height: 50px;
+}
+
+
+
+.navbar{
+  display: flex;
+  column-gap: 2rem;
+  list-style: none;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 1000;
+  list-style: none;
+  /* background: #fff */
+
+  }
+
+  .navbar a:hover,
+  .navbar .active{
+  color:white;
+  border-bottom: 3px solid yellow;
+ }
+
+ .icon{
+    font-size: 50px;
+    color:red;
+ }
+
+
+ .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+      
+      /* Style the dropdown button */
+      .dropbtn {
+          color: black;
+          background-color: none; /* Change to your desicrimson background color */
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      
+      /* Style the dropdown content (hidden by default) */
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: white; /* Change to your desicrimson background color */
+          min-width: 160px;
+          z-index: 1;
+          color:crimson;
+      }
+      
+      /* Style the dropdown links */
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+          background-color:crimson; /* Change to your desicrimson hover background color */
+          
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+
+
+.contactus{
+position: relative;
+ min-height: 100vh;
+ align-items: center;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+background: url('imagess/mustangimg.jpg');
+background-size: cover;
+}
+
+
+.text{
+    color: #fff;
+}
+
+.contactus .content
+{
+max-width: 800px;
+ text-align: center;
+}
+.contactus .content h2
+{
+font-size: 36px;
+ font-weight: 500; 
+ color: yellow;
+ padding-top: 10px;
+}
+.contactus .content p{
+font-size: 36px;
+ font-weight: 500;
+  color: #fff;
+}
+
+.container
+{
+width: 100%;
+display: flex;
+align-items: center;
+/* justify-content: space-between; */
+/* margin-top:30px; */
+}
+
+.container .contactInfo
+{
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+
+.container.contactInfo .box
+{
+position: relative;
+padding: 20px 0;
+display:flex;
+}
+
+.container.contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 220px;
+}
+
+.container.contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container.contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #ffffff82;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  
+}
+
+.contactForm .inputBox input, .contactForm .inputBox .textarea {
+  width: 100%;
+  padding: 10PX 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #cfc3c49c;
+  outline: none;
+  resize: none;
+  background-color: #eaa1a19e;
+  text-align: center;
+  border-color: brown;
+}
+
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666 ;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span
+{
+    color: #e91e63;
+    font-size:12px;
+    transform: translateY(-20px);
+
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #d40000a6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 18px;
+    position: relative;
+    left: 130px;
+    border-radius: 5px;
+}
+
+
+.footer {
+  background-color: crimson;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.footer-section {
+  flex: 0 0 calc(33.33% - 20px);
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-family: sans-serif
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: yellow;
+}
+.face{
+    color: white;
+}
+.face:hover{
+  color: yellow;
+}
+
+
+ .footer-bottom {
+    text-align: center;
+    padding: 0px 0;
+    background-color: black;
+    color: #fff;
+    margin-bottom: -45px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: sans-serif;
+}
+
+.footer-links a:hover {
+  color: yellow;
+}
+
+
+
+
+  
+
+
+
+ </style>
+</body>
+</html>

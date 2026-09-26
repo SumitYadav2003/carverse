@@ -1,0 +1,877 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+    <style>
+.about-us-container {
+ padding: 40px;
+  background-color: #f0f0f0;
+        }
+ .about-us-title {
+   font-size: 36px;
+   color: crimson;
+   margin-bottom: 20px;
+   padding-top: 43px;
+   font-weight: bold;
+        }
+
+.about-us-content {
+  display: flex;
+   align-items: center;
+ justify-content: space-between;
+        }
+
+  .about-us-text {
+  flex: 1;
+  padding: 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+  .about-us-text h2 {
+   font-size: 28px;
+   color: #f06430;
+   margin-bottom: 15px;
+        }
+
+ .about-us-text p {
+  line-height: 1.6;
+        }
+
+  .about-us-text p:hover{
+    color:black;
+  border-bottom: 3px solid crimson;
+  }
+
+  .about-us-image {
+   flex: 1;
+   margin-left: 20px;
+   border: 1px solid crimson;
+   border-radius: 10px;
+   overflow: hidden;
+        }
+
+
+ .about-us-image img {
+max-width: 100%;
+ height: auto;
+ border-radius: 10px;
+ overflow: hidden;
+        }
+
+   .about-us-image:hover{
+   transform: scale(1.1);
+  transition: 0.5s;
+  color:white;
+          
+        }
+
+ 
+        header {
+     display: block; width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 100;
+     background-color:crimson;
+     text-decoration:none;
+     }
+ 
+ 
+ .nav{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 20px 35px;
+       margin-right: 20px;
+       text-decoration:none;
+         }
+ 
+ 
+ #menu-icon {
+   font-size: 24px;
+   cursor: pointer;
+   color: crimson;
+   display: none;
+ }
+ 
+ .logo {
+ font-size: 1.2rem;
+ font-weight: 700;
+ color: black;
+ position: relative;
+ left:-300px;
+ }
+ 
+ 
+ .navbar{
+   display: flex;
+   column-gap: 2rem;
+   list-style: none;
+ 
+ }
+ 
+ .navbar a {
+   color: black;
+   font-size: 1rem;
+   text-transform: uppercase;
+   font-weight: 1000;
+   text-decoration:none;
+   }
+ 
+   .navbar a:hover,
+   .navbar .active{
+   color:white;
+  }
+
+ *{
+font-family: "Poppins", sans-serif;
+}
+
+/* 
+
+
+  header {
+display: block;
+width: 100%;
+ position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+    } 
+
+
+.nav{
+ display: flex;
+align-items: center;
+ justify-content: space-between;
+ padding: 12px 35px;
+        }
+
+
+#menu-icon {
+font-size: 24px;
+cursor: pointer;
+ color: var(--text-color);
+ display: none;
+}
+
+.logo {
+font-size: 27px;
+font-weight: 950;
+color:white;
+
+}
+
+.logo :hover{
+color: black;
+}
+
+.header{
+background-color: #ff00007d;
+height: 59px;
+}
+
+
+/* 
+.navbar{
+display: flex;
+column-gap: 2rem;
+list-style: none;
+}
+
+.navbar a {
+color: var(--text-color);
+font-size: 17px;
+text-transform: uppercase;
+font-weight: 1000;
+
+}
+  
+
+ .navbar a:hover,
+.navbar .active{
+color:white;
+border-bottom: 3px solid crimson;
+ }   */
+
+
+
+.achievements-section {
+text-align: center;
+padding: 40px 0;
+  }
+  
+.achievements-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 20px;
+  }
+  
+.achievement {
+background-color: #ffffff96;
+border: 1px solid crimson;
+ border-radius: 10px;
+padding: 20px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+text-align: center;
+margin: 10px;
+flex: 0 0 calc(33.33% - 20px);
+  }
+  
+  .achievement h3 {
+  font-weight: bold;
+  }
+  
+ .achievement img {
+ max-width: 400px;
+ max-height: 245px;
+ margin: 10px auto;
+ display: block;
+ border: 1px solid yellow;
+
+  }
+
+ .achievement img:hover{
+transform: scale(1.1);
+transition: 0.5s;
+}
+
+
+
+body{
+    background: url('imagess/bg1.jpg');
+}
+
+.achieve{
+  font-size: 39px;
+  color: white;
+}
+
+.footer {
+            background-color: crimson;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-logo img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .footer-section {
+            flex: 0 0 calc(33.33% - 20px);
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer-section h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: yellow;
+        }
+
+      
+
+     
+        .footer-bottom {
+            text-align: center;
+            padding: 0px 0;
+            background-color: black;
+            color: #fff;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: #f06430;
+        }
+
+        .logodesign{
+            font-size: 0.73em;
+        }
+
+        .search-icon {
+  font-weight: 900; /* Set the font weight to 900 (bold) */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* Style for the search icon */
+.search-icon strong::before {
+  content: "\f002"; /* FontAwesome search icon Unicode character */
+  font-family: "Font Awesome 5 Free"; /* Specify the FontAwesome font family */
+  margin-right: 5px; /* Add some spacing between the icon and text */
+}
+
+ 
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+    
+        <div class="nav container">
+          <a href="#" class="logo">Car<span>Verse</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+    
+        <!-- <a href="#" class="logo">Car<span>Verse</span></a> -->
+        <ul class="navbar">
+        <li><a href="Mainpage.php" class="active">Home</a></li>
+        <!-- <li><a href="#cars">Cars</a></li> -->
+        <li><a href="#about">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="blog1.html">Blog</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="admin_login.php">Admin</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">User</a>
+          <div class="dropdown-content">
+              <a href="user_login.php">Login</a>
+              <a href="logout.php" onclick="return confirm('Logout from the website?');">Logout</a>
+              <a href="user_register.php">Register</a>
+              <a href="update_user.php">Update</a>
+          </div>
+      </li>
+      
+        <!-- <li><a href="update_user.php">Update</a></li> -->
+    
+         <!-- <li><a href="logout.php">LOGOUT</a></li>  -->
+        <!-- <li><a href="logout.php" onclick="return confirm('logout from the website?');">logout</a> </li> -->
+        <!-- <a href="logout.php" class="design" onclick="return confirm('logout from the website?');"> <ion-icon name="log-out-outline" class="design" ></ion-icon> </a> -->
+    
+        </ul> 
+    </div>
+    </header>
+
+    <style>
+        /* Style the dropdown menu */
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+      
+      /* Style the dropdown button */
+      .dropbtn {
+          color: black;
+          background-color: none; /* Change to your desicrimson background color */
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      
+      /* Style the dropdown content (hidden by default) */
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: white; /* Change to your desicrimson background color */
+          min-width: 160px;
+          z-index: 1;
+          color:crimson;
+      }
+      
+      /* Style the dropdown links */
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+          background-color:crimson; /* Change to your desicrimson hover background color */
+          
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+ 
+      
+      </style>
+        
+      
+      
+  
+    <!-- Add your existing header -->
+
+    <div class="about-us-container">
+        <div class="about-us-title">About Us</div>
+        <div class="about-us-content">
+            <div class="about-us-text">
+                <h2>Our Story</h2>
+                <p>Welcome to Car Verse, your one-stop destination for high-quality vehicles and excellent customer service
+                    >With over 20 years of experience in the automotive industry, we take pride in providing the best car buying experience to our customers
+                </p>
+                <p>At Car Dealership, we offer a wide range of new and pre-owned vehicles, catering to different budgets and preferences
+                    Our team of experienced professionals is always ready to assist you in finding the perfect car that suits your needs.
+                    Customer satisfaction is our top priority, and we strive to ensure that every customer leaves our dealership with a smile on their face</p>
+                <p> We believe in building long-term relationships with our clients, which is why many of our customers return to us whenever they need a new cars
+                      that lie within.
+                      Visit our showroom today to explore the latest car models and take a test drive. Our friendly staff will be happy to answer all your queries and
+                      guide you through the car buying process. Experience the joy of owning a new car with Car Dealership</p>
+            </div>
+            <div class="about-us-image">
+                <img src="imagess/classicalcar.jpg" alt="About Us Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="achievements-section">
+        <h2 class="achieve">Our Achievements</h2>
+        <div class="achievements-container">
+          <div class="achievement">
+            <img src="imagess/achieve1.webp" alt="Achievement 1">
+            <h3>50000+ Customers</h3>
+            <p>Keeping Customers Happy From Past 10 Years</p>
+          </div>
+          
+          <div class="achievement">
+            <img src="imagess/achieve3.webp" alt="Achievement 2">
+            <h3>AWARDS AND MEDALS</h3>
+            <p>Awarded As Top 10 Car Dealership Website</p>
+          </div>
+          
+          <div class="achievement">
+            <img src="imagess/achieve4.jpg" alt="Achievement 3">
+            <h3>MULTIBRANDS</h3>
+            <p>We Are Succesful in Undertaking Different Brands</p>
+          </div>
+          
+          <div class="achievement">
+            <img src="imagess/achieve5.jpg" alt="Achievement 4">
+            <h3>CLIENTS</h3>
+            <p>We Have 30000+ Returning Clients</p>
+          </div>
+          
+          <div class="achievement">
+            <img src="imagess/achieve6.jpg" alt="Achievement 5">
+            <h3>HAPPY CUSTOMERS</h3>
+            <p>We Are Having 20000+ Happy Customers</p>
+          </div>
+          
+          <div class="achievement">
+            <img src="imagess/achieve8.jpg" alt="Achievement 6">
+            <h3>LUXURY</h3>
+            <p>We Are Having 1000+ Luxury Cars</p>
+          </div>
+        </div>
+      </div>
+    
+       <footer class="footer">
+         <div class="footer-logo">
+            <img src="imagess/gwagon.webp" alt="Footer Logo">
+        </div> 
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="Mainpage.php">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="blog1.html">Blog1</a></li>
+                    <li><a href="blog2.html">Blog2</a></li>
+                    <li><a href="blog3.html">Blog3</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>Stay connected with us for the latest updates and insights.</p>
+                <div class="social-icons">
+                    <a href="imagess/facebook.png" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="imagess/twitter.png" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="imagess/instagram.webp" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 CarVerse Website. All rights reserved. | Designed by Sumit Yadav</p>
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+  
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#" class="logo">Car<>Verse</></a>
+            <ul class="navbar">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#parts">Parts</a></li>
+            <li><a href="#blog">Our Blog</a></li>
+            </ul>
+            </div>
+
+
+    </header>
+
+
+    
+        <div class="about-us">
+            <img src="imagess/about.jpg" alt="About Us Image">
+            </div>
+           
+            <p class="tags">Welcome to Car Verse, your one-stop destination for high-quality vehicles and excellent customer service</p>
+            <p class="tags">With over 20 years of experience in the automotive industry, we take pride in providing the best car buying experience to our customers.</p>
+            <p class="tags">At Car Dealership, we offer a wide range of new and pre-owned vehicles, catering to different budgets and preferences.</p>
+            <p class="tags">Our team of experienced professionals is always ready to assist you in finding the perfect car that suits your needs.</p>
+            <p class="tags">Customer satisfaction is our top priority, and we strive to ensure that every customer leaves our dealership with a smile on their face.</p>
+            <p class="tags"> We believe in building long-term relationships with our clients, which is why many of our customers return to us whenever they need a new car.</p>
+            <p class="tags">Visit our showroom today to explore the latest car models and take a test drive. Our friendly staff will be happy to answer all your queries and</p>
+            <p class="tags">guide you through the car buying process. Experience the joy of owning a new car with Car Dealership.</p>
+    <a href="contactus.html">crimsonirec</a>
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html> -->

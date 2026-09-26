@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="review.css"> -->
+</head>
+<body>
+   
+    <header>
+        <!-- <h1 class="text"> Your Reviews Matters</h1> -->
+        <div class="nav">
+        <!-- Menu Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Logo -->
+        <a href="#" class="logo">Car<span>Verse</span></a>
+        <!-- Nav List -->
+        <ul class="navbar">
+          <li><a href="Mainpage.php">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="blog1.html">OUR BLOG</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+          <li><a href="service.html">SERVICES</a></li>
+          <li><a href="appointment.html" class="btn">APPOINTMENT</a></li>
+
+          <li class="dropdown">
+              <a href="#" class="dropbtn">USER</a>
+              <div class="dropdown-content">
+                  <a href="user_login.php">Login</a>
+                  <a href="logout.php" onclick="return confirm('Logout from the website?');">Logout</a>
+                  <a href="user_register.php">Register</a>
+                  <a href="update_user.php">Update</a>
+              </div>
+              </li>
+        </ul>
+    
+    </header>
+
+  
+        
+
+
+
+    <div class="cnt">
+        <div class="formbox">
+            <div class="social-icons"></div>
+            <div class="ct">
+           <div class="c2">
+            <h3>Your Feedback</h3>
+            </div>
+            
+            </div>
+        <form id="contact" class="help" method="post" action="rev.php">
+            <input type="text" name="name" class="input-field" placeholder="Name" requicrimson>
+            <input type="text" name="email" class="input-field" placeholder="email" requicrimson>
+            <input type="text" name="phone" class="input-field" placeholder="Ph-Number">
+            <input type="text" name="review" class="input-field" placeholder="Your Feedback" requicrimson>
+                     <a href="thanks1.html" onclick="return confirm('Your Review has been submitted successfully');"><button type="submit" name="sub" class="submit-btn">Submit</button></a>
+        </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+           <img src="imagess/gwagon.webp" alt="Footer Logo">
+       </div> 
+       <div class="footer-content">
+           <div class="footer-section">
+               <h4>Explore</h4>
+               <ul>
+                   <li><a href="Mainpage.php">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="service.html">Services</a></li>
+                   <li><a href="contactus.html">Contact</a></li>
+               </ul>
+           </div>
+           <div class="footer-section">
+               <h4>Resources</h4>
+               <ul>
+                   <li><a href="blog1.html">Blog1</a></li>
+                   <li><a href="blog2.html">Blog2</a></li>
+                   <li><a href="blog3.html">Blog3</a></li>
+                   <li><a href="review.html">Reviews</a></li>
+               </ul>
+           </div>
+           <div class="footer-section">
+               <h4>Connect</h4>
+    <p>Stay connected with us for the latest updates and insights.</p>
+    <div class="social-icons">
+    <ion-icon name="logo-facebook" class="face"></ion-icon>
+    <ion-icon name="logo-twitter" class="face"></ion-icon>
+    <ion-icon name="logo-instagram" class="face"></ion-icon>               
+    <ion-icon name="logo-linkedin" class="face"></ion-icon>
+    <ion-icon name="logo-youtube" class="face"></ion-icon>
+    
+               </div>
+           </div>
+       </div>
+       
+       <div class="footer-bottom">
+           <p>&copy; 2023 CarVerse Website. All rights reserved. | Designed by Sumit Yadav</p>
+           <div class="footer-links">
+               <a href="#">Terms of Service</a>
+               <a href="#">Privacy Policy</a>
+               <a href="#">Cookie Policy</a>
+           </div>
+       </div>
+     </footer>
+    
+
+    
+     <style>
+        
+header {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: yellow;
+    background-color: crimson;
+    }
+  
+  
+  .nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 55px;
+        }
+  
+  #menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
+  display: none;
+  }
+  
+  .logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color:black;
+  text-decoration: none;
+  
+  }
+  
+  .logo :hover{
+  color: white;
+  }
+  
+  .header{
+  background-color:crimson;
+  height: 50px;
+  }
+  
+  
+  
+  .navbar{
+  display: flex;
+  column-gap: 2rem;
+  list-style: none;
+  }
+  
+  .navbar a {
+  color: black;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-family: sans-serif;
+  text-decoration: none;
+  /* background: #fff */
+  
+  }
+  
+  .navbar a:hover,
+  .navbar .active{
+  color:white;
+  border-bottom: 3px solid yellow;
+  ;
+  
+  }
+
+  .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+      
+      /* Style the dropdown button */
+      .dropbtn {
+          color: black;
+          background-color: none; /* Change to your desicrimson background color */
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      
+      /* Style the dropdown content (hidden by default) */
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: white; /* Change to your desicrimson background color */
+          min-width: 160px;
+          z-index: 1;
+          color:crimson;
+      }
+      
+      /* Style the dropdown links */
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+          background-color:crimson; /* Change to your desicrimson hover background color */
+          
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+
+
+  body {
+    background: url("imagess/lambo.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-size: cover;
+}
+     /* *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+} */
+/* .cnt{
+    height: 100%;
+    width: 100%;
+    padding-left: 39px;
+    position: absolute;
+    padding-top: 129px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("; */
+.help{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;     
+}
+.formbox {
+    width: 470px;
+    height: 440px;
+    position: relative;
+    margin: 1% auto;
+    background-color: #e1606047;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 143px;
+    border: 0.2rem solid;
+    border-color: crimson;
+}
+.input{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    background-color: #eaae8b00;
+}
+
+ .text{
+    padding-top: 50px;
+    font-weight: bold;
+}
+.input-field {
+    top: 90px;
+    width: 350px;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid crimson;
+    outline: none;
+    font-weight: bolder;
+    border: 0.2rem solid crimson;
+    padding: 10px 10px;
+    background-color: #7fff0000;
+    height: 17px;
+}
+
+.submit-btn{
+    top: 35px;
+    position: relative;
+    left:50px;
+    width: 85%;
+    padding: 8px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f3505087;
+    color: white;
+    font-weight: bold;
+    border: 0.2rem solid;
+    border-color: crimson;
+    text-decoration: none;
+}
+.submit-btn:hover{
+    background-color: yellow;
+    color: black;
+}
+#contact{
+    left: 50px;
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.ct{
+    text-align: center;
+}
+.c2{
+    width: 36%;
+    padding: 1px 15px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.footer {
+  background-color: crimson;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 55px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.footer-section {
+  flex: 0 0 calc(33.33% - 20px);
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-family: sans-serif
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: yellow;
+}
+.face{
+    color: white;
+}
+.face:hover{
+  color: yellow;
+}
+
+
+ .footer-bottom {
+    text-align: center;
+    padding: 0px 0;
+    background-color: black;
+    color: #fff;
+    margin-bottom: -45px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: sans-serif;
+}
+
+.footer-links a:hover {
+  color: yellow;
+}
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+     </style>
+
+
+     
+     
+    
+
+
+    </body>
+    </html>

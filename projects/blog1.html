@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="blog1.css"> -->
+</head>
+<body>
+    <header class="header">
+    
+        <div class="nav container">
+        <!-- Menu Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Logo -->
+        <a href="#" class="logo">Car<span>Verse</span></a>
+        <!-- Nav List -->
+        <ul class="navbar">
+        <li><a href="Mainpage.php" class="active">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="blog1.html">Our Blog</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">User</a>
+          <div class="dropdown-content">
+              <a href="user_login.php">Login</a>
+              <a href="logout.php" onclick="return confirm('Logout from the website?');">Logout</a>
+              <a href="user_register.php">Register</a>
+              <a href="update_user.php">Update</a>
+          </div>
+      </li>
+  </li>
+    <!-- <li><a href="update_user.php">Update</a></li> -->
+
+     <!-- <li><a href="logout.php">LOGOUT</a></li>  -->
+    <!-- <li><a href="logout.php" onclick="return confirm('logout from the website?');">logout</a> </li> -->
+    <!-- <a href="logout.php" class="design" onclick="return confirm('logout from the website?');"> <ion-icon name="log-out-outline" class="design" ></ion-icon> </a> -->
+   
+        </ul>
+    </header>
+
+
+    <style>
+      /* Style the dropdown menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        left:-20px;
+    }
+    
+    /* Style the dropdown button */
+    .dropbtn {
+        color: black;
+        background-color: none; /* Change to your desicrimson background color */
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    /* Style the dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white; /* Change to your desicrimson background color */
+        min-width: 160px;
+        z-index: 1;
+        color:crimson;
+    }
+    
+    /* Style the dropdown links */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color:crimson; /* Change to your desicrimson hover background color */
+        
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    </style>
+
+
+    <body>
+  <h1 class="blogg">THINGS TO BE THINKED OFF BUYING A CAR</h1>
+
+  <section id="featucrimson-products">
+    <div class="product">
+        <img src="imagess/civic.jpg" height="400" width="400">
+        <h3>BUDGET</h3>
+        <p>1 - Determine Your Budget<br>
+           2 - Stick To Budget<br>
+          3 - Consider overall Cost<br>
+          4 - Research different Models</p>
+        
+    </div>
+    <div class="product">
+        <img src="imagess/pagani.jpg" height="400" width="400">
+    <h3>FINANCING OPTIONS</h3>
+    <p>1 - Research Financing Option<br>
+       2 - Opt For Loan OR Lease<br>
+       3 - Shop Around Best interest Rate<br>
+       4 - Should Be Done On Time
+      </p>
+    
+        
+    </div>
+    <div class="product">
+        <img src="imagess/nissan.webp" height="400" width="400">
+    <h3>TEST DRIVE</h3>
+    <p>1 - Always take for Test Drive<br>
+       2 - See How It Feels On Road<br>
+       3 - Check the Parts as Mandatory</p>
+    
+        
+    </div>
+    <div class="product">
+        <img src="imagess/wrangler.jpg" height="400" width="400"/>
+    <h3>VEHICLE HISTORY REPORT</h3>
+    <p>1 -  Verifying the Documnents<br>
+       2 - Check For the Criminal Activity<br>
+       3 - Have A qualified Mechanic To Check</p>
+    
+        
+    </div>
+    <div class="product">
+        <img src="imagess/porsche1.jpg" height="400" width="400"/>
+        <h3>OWNERSHIP COST</h3>
+        <p>1 - Consider ongoing ownership costs <br>
+           2 - Making The Ownership Cost Less<br>
+           3 - Should Focus On Fuel
+
+        </p>
+       
+        
+    </div>
+    <div class="product">
+        <img src="imagess/r1.jpg" height="400" width="400">
+        <h3>NEGOTIATION</h3>
+        <p>1 - Be Ready To Negotiate<br>
+           2 - Don't Agree With Expected Price<br>
+           3 - Negotiating At its Best</p>
+       
+        
+    </div>
+
+    
+    <!-- Add more product divs as needed -->
+</section>
+<h1 class="moreblog">READ MORE</h1>
+<div class="card">
+    <img src="imagess/ffmain.jpg" alt="Car 1">
+    <h2>THINGS TO BE THINKED OF WHILE DRIVING A CAR </h2>
+    <p>A stylish sedan designed for both comfort and performance</p>
+    <a href="blog2.html"><button>Learn More</button></a>
+  </div>
+  
+  <div class="card">
+    <img src="imagess/headerurus.webp" alt="Car 2">
+    <h2>ADVANTAGE OF HAVING A OWN PRIVATE CAR</h2>
+    <p>Get ready to conquer any terrain with our rugged off-road vehicle</p>
+   <a href="blog3.html" ><button>Learn More</button></a>
+  </div>
+
+
+<!-- <h1 class="also">ALSO READ</h1>
+
+<div class="displayy">
+<div class="container">
+    <h1 class="things">THINGS TO BE FOLLOWED WHILE DRIVING</h1>
+    <img src="imagess/brabus800.jpg" alt="Car Image" class="car-image">
+     <a href="blog2.html"><p class="image-text">READ NOW</p></a> 
+</div>
+</div> -->
+
+
+
+<footer class="footer">
+  <div class="footer-logo">
+     <img src="imagess/gwagon.webp" alt="Footer Logo">
+ </div> 
+ <div class="footer-content">
+     <div class="footer-section">
+         <h4>Explore</h4>
+         <ul>
+             <li><a href="Mainpage.php">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="service.html">Services</a></li>
+             <li><a href="contactus.html">Contact</a></li>
+         </ul>
+     </div>
+     <div class="footer-section">
+         <h4>Resources</h4>
+         <ul>
+             <li><a href="blog1.html">Blog1</a></li>
+             <li><a href="blog2.html">Blog2</a></li>
+             <li><a href="blog3.html">Blog3</a></li>
+             <li><a href="review.html">Reviews</a></li>
+         </ul>
+     </div>
+     <div class="footer-section">
+         <h4>Connect</h4>
+<p>Stay connected with us for the latest updates and insights.</p>
+<div class="social-icons">
+<ion-icon name="logo-facebook" class="face"></ion-icon>
+<ion-icon name="logo-twitter"></ion-icon>
+<ion-icon name="logo-instagram"></ion-icon>               
+<ion-icon name="logo-linkedin"></ion-icon>
+<ion-icon name="logo-youtube"></ion-icon>
+
+         </div>
+     </div>
+ </div>
+ 
+ <div class="footer-bottom">
+     <p>&copy; 2023 CarVerse Website. All rights reserved. | Designed by Sumit Yadav</p>
+     <div class="footer-links">
+         <a href="#">Terms of Service</a>
+         <a href="#">Privacy Policy</a>
+         <a href="#">Cookie Policy</a>
+     </div>
+ </div>
+</footer>
+
+<!-- 
+<div class="cards">
+
+    <div class="card">
+    <img src="imagess/defender.jpg" alt="Card 1">
+    <div class="card-title">Card 1</div>
+    <div class="card-info">Budget: Determine your budget and stick to it. Consider the overall cost of the car, including taxes, insurance, registration, and potential financing.
+        Research: Research different car models, makes, and their features. Consider your needs (e.g., size, fuel efficiency, safety features) and preferences before making a choice.
+        New vs. Used: Decide whether you want a new or used car. Used cars can often provide better value, but make sure to get a thorough inspection and vehicle history report..</div>
+  </div>
+
+
+  <div class="card">
+    <img src="imagess/porsche.jpg" alt="Card 2">
+    <div class="card-title">Card 2</div>
+    <div class="card-info">Financing Options: Research financing options, including loans and leasing. Shop around for the best interest rates and terms.
+        Test Drive: Always take the car for a test drive. Pay attention to how it feels on the road, how comfortable the interior is, and whether all the features are functioning properly..</div>
+  </div>
+
+
+
+  <div class="card">
+    <img src="imagess/gwagon.webp" alt="Card 3">
+    <div class="card-title">Card 3</div>
+    <div class="card-info">Vehicle History Report: If buying a used car, obtain a vehicle history report to check for any accidents, title issues, or other potential crimson flags.
+        Inspection: Have a qualified mechanic inspect the car, especially if buying a used car. They can identify hidden issues that might not be apparent during a test drive..</div>
+  </div>
+  <div class="card">
+    <img src="imagess/gwagonnn.jpeg" alt="Card 4">
+    <div class="card-title">Card 4</div>
+    <div class="card-info">Ownership Costs: Consider ongoing ownership costs such as fuel, maintenance, insurance, and potential repairs.
+        Resale Value: Research the projected resale value of the car. Some brands and models hold their value better than others..</div>
+  </div>
+  <div class="card">
+    <img src="imagess/mustang.jpg" alt="Card 5">
+    <div class="card-title">Card 5</div>
+    <div class="card-info">Warranty: Understand the warranty coverage for both new and used cars. Make sure you're aware of what's covecrimson and for how long.
+        Insurance Rates: Get insurance quotes for the car you're considering. Insurance rates can vary significantly depending on the make and model..</div>
+  </div>
+  <div class="card">
+    <img src="imagess/mclaren.jpg" alt="Card 6">
+    <div class="card-title">Card 6</div>
+    <div class="card-info">Negotiation: Be prepacrimson to negotiate the price with the seller. Research the market value of the car to ensure you're getting a fair deal.
+        Ownership Documentation: Ensure you receive all necessary paperwork, including the title, bill of sale, and any warranty documentation..</div>
+  </div>
+</div> -->
+
+<style>
+    
+header {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    }
+
+
+.nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 35px;
+        }
+
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
+  display: none;
+}
+
+.logo {
+font-size: 1.2rem;
+font-weight: 700;
+color:black;
+
+}
+
+.logo :hover{
+color: yellow;
+}
+
+.header{
+  background-color: crimson;
+height: 65px;
+}
+
+
+
+.navbar{
+  display: flex;
+  column-gap: 2rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 1000;
+  text-decoration: none;
+  /* background: #fff */
+
+  }
+
+  .navbar a:hover,
+  .navbar .active{
+  color:white;
+  border-bottom: 3px solid yellow;
+ }
+
+.blogg{
+    justify-content: center;
+    padding-top: 47px;
+    color: yellow;
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url('imagess/bg1.jpg')
+  }
+  #featucrimson-products {
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.product {
+    background-color: #ffffffd4;
+    /* border: 1px solid #ddd; */
+    padding: 31px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 390px;
+    width: 370px;
+}
+
+
+.product img {
+    max-width: 100%;
+    width: 575px;
+    height: 250px;
+}
+
+.product img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.wishlist-btn:hover{
+    background-color: #eb45de;
+}
+.cart-btn:hover{
+    background-color: #f6ff00;
+}
+
+.wishlist-btn,
+.cart-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+}
+
+.wishlist-btn {
+    background-color: #c156b8;
+    color: #333;
+}
+.cart-btn{
+    background-color:  #ecef2d;
+}
+
+
+
+  /* .card {
+    width: calc(50% - 20px);
+    margin: 10px;
+    border: 1px solid yellow;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  .card-info {
+    font-size: 20px;
+    color:yellow;
+    margin: 5px 0;
+  }
+
+.cards{
+    justify-content: center;
+}
+
+   */
+
+   .car-image {
+    max-width: 86%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 17px;
+}
+
+.car-image:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.image-text {
+    font-size: 20px;
+    margin-top: 40px;
+    color: yellow;
+    font-weight: bold;
+}
+.image-text:hover{
+  color:lightyellow;
+}
+.container {
+  text-align: center;
+}
+.displayy{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.things{
+  padding-top: 20px;
+  color: yellow;
+}
+
+.card{
+  overflow: hidden;
+}
+ 
+.footer {
+  background-color: crimson;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.footer-section {
+  flex: 0 0 calc(33.33% - 20px);
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-family: sans-serif
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: yellow;
+}
+
+.face:hover{
+  color: yellow;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 0px 0;
+    background-color: black;
+    color: #fff;
+    margin-bottom: -45px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: sans-serif;
+}
+
+.footer-links a:hover {
+  color: yellow;
+}
+  
+
+  .moreblog{
+    color: crimson;
+  }
+
+.moreblog:hover{
+  color: yellow;
+  
+}
+
+.card {
+  border: 1px solid RED;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.card h2 {
+  margin-top: 45px;
+  font-size: 24px;
+  color: white;
+}
+
+.card p {
+  margin-top: 8px;
+  font-size: 19px;
+  color: yellow;
+}
+
+.card button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  font-weight: 400;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background: var(--bg-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color)
+}
+
+
+:root {
+    --main-color:
+    #d90429;
+    --text-color:
+    #020102;
+    --bg-color:
+    #fff;
+    }
+
+</style>
+    
+</body>
+</html>

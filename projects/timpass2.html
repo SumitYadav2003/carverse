@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+
+        
+header {
+ display: block; width: 100%;
+ position: fixed;
+top: 0;
+left: 0;
+ z-index: 100;
+ background-color:#ff0000c2;
+ }
+        
+        
+.nav{
+ display: flex;
+align-items: center;
+ justify-content: space-between;
+ padding: 20px 35px;
+ }
+        
+        
+ #menu-icon {
+ font-size: 24px;
+ cursor: pointer;
+ color: black;
+ display: none;
+}
+
+.logo {
+font-size: 1.2rem;
+font-weight: 700;
+color: black;
+}
+        
+        
+.navbar{
+display: flex;
+column-gap: 2rem;
+position: fixed;
+padding-left: 604px; 
+}
+     
+.navbar a {
+ color: black;
+ font-size: 1rem;
+text-transform: uppercase;
+ font-weight: 1000;
+text-decoration:none;
+        }
+        
+.navbar a:hover,
+ .navbar .active{
+ color:yellow;
+        } 
+
+h1{
+    padding-left: 508px;
+    color: RED;
+}
+        
+        
+
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+ body {
+ font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+ background-color: #f5f5f5;
+background: url('imagess/roads.jpeg');
+        }
+
+ .container {
+ max-width: 800px;
+ margin: 30px auto;
+background-color:#ffffff4d;
+ padding: 20px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+ .blog-post {
+ margin-bottom: 40px;
+        }
+ .blog-post img {
+ max-width: 100%;
+ height: auto;
+ padding-left: 2px;
+        }
+
+.blog-post h2 {
+ font-size: 24px;
+ 
+} .blog-post p {
+font-size: 16px;
+        }
+
+        
+.containerrrr {
+            display: inline-block;
+            width: 29%;
+            margin: 7px;
+            padding: 20px;
+            background-color:#f2f2f2b0;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .containerrrr h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .containerrrr p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        
+        .containerrrr button {
+            background-color: crimson;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .imag{
+            height:225px;
+            padding-top: 31px;
+        }
+
+        
+
+.footer {
+  background-color: crimson;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 105px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.footer-section {
+  flex: 0 0 calc(33.33% - 20px);
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #f06430;
+}
+
+
+
+
+.footer-bottom {
+  text-align: center;
+  padding: 0px 0;
+  background-color: black;
+  color: #fff;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #f06430;
+}
+
+.tophead{
+    padding-left: 520px;
+    padding-top: 77px;
+}
+
+.imag{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav contain">
+      
+          <i class='bx bx-menu' id="menu-icon"></i>
+      
+          <a href="#" class="logo">Car<span>Verse</span></a>
+          <ul class="navbar">
+          <li><a href="Mainpage.php" class="active">Home</a></li>
+          <li><a href="#cars">Cars</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="blog1.html">Our Blog</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="logout.php" onclick="return confirm('logout from the website?');">logout</a> </li>
+      
+          </ul> 
+      </div>
+      </header>
+   <h1 class="tophead">LATEST CAR UPDATES</h1>
+
+    <div class="container">
+        <div class="blog-post">
+            <img src="imagess/pressso.webp" alt="Image 1">
+            <h2>FaceLift</h2>
+            <p>S-Presso is available in four variants
+                Prices start at Rs. 4.26 lakh. .</p>
+        </div>
+
+        <div class="blog-post">
+            <img src="imagess/presso1.webp" alt="Image 2">
+            <h2>Screen</h2>
+            <p>The Maruti S-Presso can be had in four trim levels – Std, LXi, VXi, and VXi Plus, with petrol and CNG powertrain options. Depending on the variant, the benefits are available in the form of cash discounts of up to Rs. 35,000, exchange bonuses of up to Rs. 20,000, and corporate offers of up to Rs. 4,000...</p>
+        </div>
+
+        <div class="blog-post">
+            <img src="imagess/presso2.webp" alt="Image 3">
+            <h2>Dashboard</h2>
+            <p>The S-Presso carries a cash discount of up to Rs. 35,000, depending on the version. Then there are exchange bonuses and corporate discounts of up to Rs. 15,000 and Rs. 4,000, respectively..</p>
+        </div>
+        <div class="blog-post">
+            <img src="imagess/press.webp" alt="Image 3">
+            <h2>Logo</h2>
+            <p>The Maruti Suzuki S-Presso is currently listed with discounts of up to Rs. 54,000 in August 2023. The entry-level hatchback can be had in four variants at a starting price of Rs. 4.26 lakh (ex-showroom)..</p>
+        </div>
+        <!-- <div class="blog-post">
+            <img src="imagess/glimpse6.webp" alt="Image 3">
+            <h2>First glimpse</h2>
+            <p>The car has already been spotted sans camouflage and here is your first glimpse! Bookings will open on September 9 while prices will be announced alongside the recently facelifted ICE Tata Nexon on 14 September. .</p>
+        </div>
+        <div class="blog-post">
+            <img src="imagess/glimpse5.webp" alt="Image 3">
+            <h2>Revealing</h2>
+            <p>Our first look at the new dashboard of the new Nexon EV. very similar to the recently unveiled ICE Tata Nexon.</p>
+        </div> -->
+    </div>
+
+    
+   <h1 class="topichead">HAVE GLIMPSE ON BLOGS</h1>
+
+   <div class="containerrrr">
+    <img src="imagess/tata.jpg" class="imag">
+    <h2>BLOG 1</h2>
+    <p> Things to Check When You Buy A Second Hand Car.</p>
+   <a href="blog1.html"><button>Read More</button></a>
+</div>
+
+<div class="containerrrr">
+    <img src="imagess/mgastor.jpeg" class="imag">
+    <h2>BLOG 2</h2>
+    <p>Things To Be Followed When Driving A Car.</p>
+    <a href="blog2.html"><button>Read More</button></a>
+</div>
+
+ <div class="containerrrr">
+    <img src="imagess/presso.jpg" class="imag">
+    <h2>BLOG 3</h2>
+    <p>Advanatage Of Having A Own Car.</p>
+    <a href="blog3.html"><button>Read More</button></a>
+</div> 
+
+
+<footer class="footer">
+    <div class="footer-logo">
+       <img src="imagess/gwagon.webp" alt="Footer Logo">
+   </div> 
+   <div class="footer-content">
+       <div class="footer-section">
+           <h4>Explore</h4>
+           <ul>
+               <li><a href="Mainpage.php">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="service.html">Services</a></li>
+               <li><a href="contactus.html">Contact</a></li>
+           </ul>
+       </div>
+       <div class="footer-section">
+           <h4>Resources</h4>
+           <ul>
+               <li><a href="blog1.html">Blog1</a></li>
+               <li><a href="blog2.html">Blog2</a></li>
+               <li><a href="blog3.html">Blog3</a></li>
+               <li><a href="review.html">Reviews</a></li>
+           </ul>
+       </div>
+       <div class="footer-section">
+           <h4>Connect</h4>
+           <p>Stay connected with us for the latest updates and insights.</p>
+           <div class="social-icons">
+               <a href="imagess/facebook.png" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+               <a href="imagess/twitter.png" title="Twitter"><i class="fab fa-twitter"></i></a>
+               <a href="imagess/instagram.webp" title="Instagram"><i class="fab fa-instagram"></i></a>
+               <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+               <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+           </div>
+       </div>
+   </div>
+   
+   <div class="footer-bottom">
+       <p>&copy; 2023 CarVerse Website. All rights reserved. | Designed by Sumit Yadav</p>
+       <div class="footer-links">
+           <a href="#">Terms of Service</a>
+           <a href="#">Privacy Policy</a>
+           <a href="#">Cookie Policy</a>
+       </div>
+   </div>
+ </footer> 
+
+</body>
+</html>
